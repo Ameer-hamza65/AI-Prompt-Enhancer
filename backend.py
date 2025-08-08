@@ -162,5 +162,5 @@ def graph():
     graph.set_entry_point('generate_prompt')
 
     prompt=graph.compile()
-    return prompt['ehancer_output']
+    return prompt['ehancer_output'] 
            
