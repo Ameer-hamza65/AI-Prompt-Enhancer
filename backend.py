@@ -3,7 +3,7 @@ from langgraph.graph import StateGraph, START, END
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
 import os
-os.environ['GOOGLE_API_KEY']='AIzaSyDDtJhXO1a3ZNosTaCyAyUsoxQIxXYkwZQ'
+os.environ['GOOGLE_API_KEY']=''
 
 llm=ChatGoogleGenerativeAI(
     model="gemini-1.5-flash",
