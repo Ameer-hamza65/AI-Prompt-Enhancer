@@ -10,6 +10,6 @@ if st.button('Optimize'):
             result=response.json()
             st.subheader('Optimized Prompt:')
             st.text(result['enhanced_prompt'])
-        else:
+        else: 
             st.error('Error in optimization process.')
             
