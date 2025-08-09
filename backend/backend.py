@@ -7,7 +7,7 @@ import os
 os.environ['GOOGLE_API_KEY']=os.getenv('GOOGLE_API_KEY')
 llm=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
-    temperature=0.2,)
+    temperature=0.2,) 
 
 class Prompt(TypedDict):
     user_input: str
