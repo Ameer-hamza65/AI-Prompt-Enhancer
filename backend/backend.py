@@ -6,14 +6,14 @@ from langchain_core.messages import HumanMessage, SystemMessage
 import os
 os.environ['GOOGLE_API_KEY']=os.getenv('GOOGLE_API_KEY')
 llm=ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash", 
     temperature=0.2,) 
 
 class Prompt(TypedDict):
     user_input: str
     generator_output: str
     enhancer_output: str
-    critique_output: str
+    critique_output: str 
      
 def generate_prompt(prompt:Prompt):
     query=prompt['user_input']
