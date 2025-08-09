@@ -190,7 +190,7 @@ def graph():
         END: END,
         'generate_prompt': 'generate_prompt'
     })
-    workflow.set_entry_point('generate_prompt')
+    workflow.set_entry_point('generate_prompt') 
 
     return workflow.compile()
 
