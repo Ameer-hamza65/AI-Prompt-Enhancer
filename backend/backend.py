@@ -14,7 +14,7 @@ class Prompt(TypedDict):
     generator_output: str
     enhancer_output: str
     critique_output: str
-    
+     
 def generate_prompt(prompt:Prompt):
     query=prompt['user_input']
     if not query:
