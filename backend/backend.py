@@ -4,8 +4,7 @@ from langchain_groq import ChatGroq
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
 import os
-os.environ['GOOGLE_API_KEY']='AIzaSyBSD5d0Ty7kbtCvz8vo8x8NmQns2Qqkafs'
-
+os.environ['GOOGLE_API_KEY']=os.getenv('GOOGLE_API_KEY')
 llm=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     temperature=0.2,)
