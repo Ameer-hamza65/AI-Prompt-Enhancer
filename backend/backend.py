@@ -188,7 +188,7 @@ def graph():
     workflow.add_edge('prompt_enhancer', 'critique_prompt')
     workflow.add_conditional_edges('critique_prompt', routed_prompts,{
         END: END,
-        'generate_prompt': 'generate_prompt'
+        'generate_prompt': 'generate_prompt' 
     })
     workflow.set_entry_point('generate_prompt') 
 
